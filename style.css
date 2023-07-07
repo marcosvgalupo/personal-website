@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 118px;
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+
+.welcome {
+    background-image: url('../../img/bg_welcome.jpg');
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 377px;
+    position: relative; 
+}
+
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index:initial;
+}
+
+.welcome > h2{
+    color: #fff;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 2em 0;
+    background-color: #fff;
+    height: 507px;
+    width: 100%;
+}
+
+.notebook-img{
+    height: 18em;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+
+.about-me > .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-me > .text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 30px;
+    text-align: left;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hobbies{
+    /* background-color: rgb(84, 89, 122); */
+    display: flex;
+    align-items: left;
+    justify-content:start;
+    flex-direction: column;
+    padding: 15px 108px;
+    gap: 20px;
+    background-color: rgb(38, 50, 56);
+    color: #fff;
+    height: 700px;
+}
+
+.blocks{
+    display: flex;
+    align-items: start;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: yellow;
+    height: 100%;
+}
+
+.hb1, .hb2, .hb3, .hb4{
+    height: 300px;
+    width: 50px;
+    background-color: rgb(84, 89, 122);
+    flex-basis: 48%; 
+    box-sizing: border-box;
+    margin: 7px;
+}
